@@ -31,7 +31,7 @@ function marcarAsistencia() {
     }
 
     // Envío al backend
-    fetch('http://localhost:3000/api/marcar', {
+    fetch('http://192.168.36.38:3000/api/marcar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
