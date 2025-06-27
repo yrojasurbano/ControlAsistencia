@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.contenedor {
+    background: white;
+    padding: 30px;
+    margin: auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+#reloj {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 250px;
+    padding: 15px 25px;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease, bottom 0.4s ease;
+    z-index: 1000;
+}
+
+#toast.visible {
+    opacity: 1;
+    bottom: 50px;
+}
+
+#toast.exito { background-color: #28a745; }
+#toast.error { background-color: #dc3545; }
